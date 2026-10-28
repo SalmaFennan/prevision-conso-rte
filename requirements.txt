@@ -1,0 +1,9 @@
+pandas
+pyarrow
+requests
+scikit-learn
+xgboost
+matplotlib
+holidays
+pytest
+ipykernel

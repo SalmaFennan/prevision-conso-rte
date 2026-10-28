@@ -1,0 +1,74 @@
+# ==============================
+# Environnement Python
+# ==============================
+.venv/
+venv/
+env/
+ENV/
+
+# ==============================
+# Fichiers Python temporaires
+# ==============================
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ==============================
+# Configuration locale et secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==============================
+# Données RTE
+# Ignorer les données, mais conserver .gitkeep
+# ==============================
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Formats de données volumineux 
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# ==============================
+# Notebooks Jupyter
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Modèles entraînés et résultats
+# ==============================
+models/
+outputs/
+*.joblib
+*.pkl
+*.pickle
+*.model
+
+# ==============================
+# Tests et outils
+# ==============================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# IDE et système
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
