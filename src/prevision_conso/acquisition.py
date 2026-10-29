@@ -47,12 +47,9 @@ def csv_vers_parquet(chemin_csv: Path, chemin_parquet: Path) -> pd.DataFrame:
     # 3. Tri chronologique, puis renumérotation des lignes de 0 à n-1
     df = df.sort_values("date_heure").reset_index(drop=True)
 
-    # 4. Enregistrement en Parquet, sans l'index pandas (inutile ici)
     chemin_parquet.parent.mkdir(parents=True, exist_ok=True)
     df.to_parquet(chemin_parquet, index=False)
     print(f"Parquet enregistré : {chemin_parquet} ({len(df)} lignes)")
-
-    # On ne supprime AUCUNE ligne ici : les valeurs manquantes seront analysées à l'étape 2
     return df
 
 
