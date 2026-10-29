@@ -1,0 +1,13 @@
+,Random Forest,XGBoost
+lag_24h,0.794,0.584
+lag_168h,0.137,0.226
+annee_cos,0.006,0.048
+est_ferie,0.005,0.036
+est_week_end,0.006,0.027
+jour_semaine,0.031,0.022
+heure_cos,0.009,0.018
+heure,0.005,0.013
+jour_annee,0.003,0.01
+annee_sin,0.003,0.008
+heure_sin,0.002,0.004
+mois,0.0,0.003
